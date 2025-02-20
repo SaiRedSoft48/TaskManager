@@ -1,0 +1,91 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-02-20 12:05:08.601202",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "description",
+  "status",
+  "priority",
+  "due_date",
+  "relevant_project",
+  "subtasks",
+  "sample"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "length": 4,
+   "options": "To Do\nIn Progress\nUnder Review\nCompleted"
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "Priority",
+   "length": 4,
+   "options": "Low\nMedium\nHigh\nCritical"
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "label": "Due Date"
+  },
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "relevant_project",
+   "fieldtype": "Link",
+   "label": "Relevant Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "subtasks",
+   "fieldtype": "Table",
+   "label": "SubTasks",
+   "options": "SubTask"
+  },
+  {
+   "fieldname": "sample",
+   "fieldtype": "Data",
+   "label": "Sample"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-02-20 13:28:04.136909",
+ "modified_by": "Administrator",
+ "module": "Task Management",
+ "name": "Task",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
