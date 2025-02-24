@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "prompt",
  "creation": "2025-02-20 12:05:08.601202",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -8,10 +9,10 @@
   "title",
   "description",
   "status",
+  "column_break_bvmw",
   "priority",
   "due_date",
   "relevant_project",
-  "subtasks",
   "sample"
  ],
  "fields": [
@@ -22,21 +23,19 @@
   },
   {
    "fieldname": "description",
-   "fieldtype": "Text Editor",
+   "fieldtype": "Text",
    "label": "Description"
   },
   {
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "length": 4,
    "options": "To Do\nIn Progress\nUnder Review\nCompleted"
   },
   {
    "fieldname": "priority",
    "fieldtype": "Select",
    "label": "Priority",
-   "length": 4,
    "options": "Low\nMedium\nHigh\nCritical"
   },
   {
@@ -52,23 +51,23 @@
    "options": "Project"
   },
   {
-   "fieldname": "subtasks",
-   "fieldtype": "Table",
-   "label": "SubTasks",
-   "options": "SubTask"
+   "fieldname": "sample",
+   "fieldtype": "Link",
+   "label": "Assigned To",
+   "options": "Team Management"
   },
   {
-   "fieldname": "sample",
-   "fieldtype": "Data",
-   "label": "Sample"
+   "fieldname": "column_break_bvmw",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-20 13:28:04.136909",
+ "modified": "2025-02-24 17:13:39.056311",
  "modified_by": "Administrator",
  "module": "Task Management",
  "name": "Task",
+ "naming_rule": "Set by user",
  "owner": "Administrator",
  "permissions": [
   {
@@ -80,6 +79,33 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
+   "select": 1,
    "share": 1,
    "write": 1
   }

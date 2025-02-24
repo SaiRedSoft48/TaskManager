@@ -2,57 +2,50 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "prompt",
- "creation": "2025-02-20 12:09:58.323114",
+ "creation": "2025-02-24 16:12:05.262974",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "title",
-  "description",
-  "column_break_tene",
-  "status",
-  "assigned_to",
-  "parent_task"
+  "team_member_name",
+  "role",
+  "email",
+  "column_break_vuqx",
+  "assigned_project"
  ],
  "fields": [
   {
-   "fieldname": "title",
+   "fieldname": "team_member_name",
    "fieldtype": "Data",
-   "label": "Title"
+   "label": "Team Member Name"
   },
   {
-   "fieldname": "description",
-   "fieldtype": "Text",
-   "label": "Description"
-  },
-  {
-   "fieldname": "status",
+   "fieldname": "role",
    "fieldtype": "Select",
-   "label": "Status",
-   "options": "To Do\nIn Progress\nCompleted"
+   "label": "Role",
+   "options": "Admin\nProject Manager\nTeam Member"
   },
   {
-   "fieldname": "column_break_tene",
+   "fieldname": "email",
+   "fieldtype": "Small Text",
+   "label": "Email"
+  },
+  {
+   "fieldname": "column_break_vuqx",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "assigned_to",
+   "fieldname": "assigned_project",
    "fieldtype": "Link",
-   "label": "Assigned to ",
-   "options": "Team Management"
-  },
-  {
-   "fieldname": "parent_task",
-   "fieldtype": "Link",
-   "label": "Parent Task",
-   "options": "Task"
+   "label": "Assigned Project ",
+   "options": "Project"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-24 17:13:23.733555",
+ "modified": "2025-02-24 17:12:57.941046",
  "modified_by": "Administrator",
  "module": "Task Management",
- "name": "SubTask",
+ "name": "Team Management",
  "naming_rule": "Set by user",
  "owner": "Administrator",
  "permissions": [

@@ -1,18 +1,19 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "hash",
+ "autoname": "prompt",
  "creation": "2025-02-20 11:56:08.900009",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "name1",
   "description",
+  "column_break_ypsq",
   "start_date",
   "end_date",
   "status",
   "priority",
-  "tasks"
+  "assigned_to"
  ],
  "fields": [
   {
@@ -22,7 +23,7 @@
   },
   {
    "fieldname": "description",
-   "fieldtype": "Text Editor",
+   "fieldtype": "Text",
    "label": "Description"
   },
   {
@@ -39,30 +40,32 @@
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "length": 4,
    "options": "Not Started\nIn Progress\nCompleted"
   },
   {
    "fieldname": "priority",
    "fieldtype": "Select",
    "label": "Priority",
-   "length": 4,
    "options": "Low\nMedium\nHigh\nCritical"
   },
   {
-   "fieldname": "tasks",
-   "fieldtype": "Table",
-   "label": "Tasks",
-   "options": "Task"
+   "fieldname": "column_break_ypsq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "assigned_to",
+   "fieldtype": "Link",
+   "label": "Assigned To",
+   "options": "Team Management"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-20 13:26:26.761045",
+ "modified": "2025-02-24 17:11:09.971643",
  "modified_by": "Administrator",
  "module": "Task Management",
  "name": "Project",
- "naming_rule": "Random",
+ "naming_rule": "Set by user",
  "owner": "Administrator",
  "permissions": [
   {
@@ -74,6 +77,33 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "select": 1,
    "share": 1,
    "write": 1
   }

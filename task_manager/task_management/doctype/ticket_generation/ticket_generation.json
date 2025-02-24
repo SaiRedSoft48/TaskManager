@@ -2,22 +2,28 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "prompt",
- "creation": "2025-02-20 12:09:58.323114",
+ "creation": "2025-02-24 17:36:51.426676",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "title",
+  "issue_title",
+  "related_task",
   "description",
-  "column_break_tene",
-  "status",
+  "column_break_bfro",
   "assigned_to",
-  "parent_task"
+  "status"
  ],
  "fields": [
   {
-   "fieldname": "title",
+   "fieldname": "issue_title",
    "fieldtype": "Data",
-   "label": "Title"
+   "label": "Issue Title"
+  },
+  {
+   "fieldname": "related_task",
+   "fieldtype": "Link",
+   "label": "Related Task",
+   "options": "Task"
   },
   {
    "fieldname": "description",
@@ -25,34 +31,28 @@
    "label": "Description"
   },
   {
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "label": "Status",
-   "options": "To Do\nIn Progress\nCompleted"
-  },
-  {
-   "fieldname": "column_break_tene",
+   "fieldname": "column_break_bfro",
    "fieldtype": "Column Break"
   },
   {
    "fieldname": "assigned_to",
    "fieldtype": "Link",
-   "label": "Assigned to ",
+   "label": "Assigned To",
    "options": "Team Management"
   },
   {
-   "fieldname": "parent_task",
-   "fieldtype": "Link",
-   "label": "Parent Task",
-   "options": "Task"
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Open\nIn Progress\nCompleted"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-24 17:13:23.733555",
+ "modified": "2025-02-24 17:40:47.376540",
  "modified_by": "Administrator",
  "module": "Task Management",
- "name": "SubTask",
+ "name": "Ticket Generation",
  "naming_rule": "Set by user",
  "owner": "Administrator",
  "permissions": [
