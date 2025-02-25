@@ -13,7 +13,8 @@
   "priority",
   "due_date",
   "relevant_project",
-  "sample"
+  "sample",
+  "attach_files"
  ],
  "fields": [
   {
@@ -59,11 +60,16 @@
   {
    "fieldname": "column_break_bvmw",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "attach_files",
+   "fieldtype": "Attach",
+   "label": "Attach Files"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-24 17:13:39.056311",
+ "modified": "2025-02-25 11:16:54.342178",
  "modified_by": "Administrator",
  "module": "Task Management",
  "name": "Task",

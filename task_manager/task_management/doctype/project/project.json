@@ -13,7 +13,8 @@
   "end_date",
   "status",
   "priority",
-  "assigned_to"
+  "assigned_to",
+  "attach_files"
  ],
  "fields": [
   {
@@ -57,11 +58,16 @@
    "fieldtype": "Link",
    "label": "Assigned To",
    "options": "Team Management"
+  },
+  {
+   "fieldname": "attach_files",
+   "fieldtype": "Attach",
+   "label": "Attach Files"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-24 17:11:09.971643",
+ "modified": "2025-02-25 11:17:16.226504",
  "modified_by": "Administrator",
  "module": "Task Management",
  "name": "Project",
