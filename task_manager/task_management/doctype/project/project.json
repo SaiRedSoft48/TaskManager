@@ -14,7 +14,8 @@
   "status",
   "priority",
   "assigned_to",
-  "attach_files"
+  "attach_files",
+  "tasks_list"
  ],
  "fields": [
   {
@@ -63,11 +64,16 @@
    "fieldname": "attach_files",
    "fieldtype": "Attach",
    "label": "Attach Files"
+  },
+  {
+   "fieldname": "tasks_list",
+   "fieldtype": "HTML",
+   "label": "Tasks List"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-25 11:17:16.226504",
+ "modified": "2025-02-27 11:14:53.068345",
  "modified_by": "Administrator",
  "module": "Task Management",
  "name": "Project",
